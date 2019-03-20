@@ -4,5 +4,5 @@
     "module": "amd",
     "allowJs": true
   },
-  "include": [ "build/**/*.ts", "build/**/*.js", "build/**/*.*.js"]
+  "include": [ "build/**/*.ts", "build/**/*.js", "build/**/*.*.js", "build/**/*.tsx"]
 }

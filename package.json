@@ -1,0 +1,22 @@
+{
+  "name": "apm-ts",
+  "version": "0.0.1",
+  "discription": "Apmjs Typescript cli",
+  "scripts": {
+    "build": "cd project && pwd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apmjs/apm-ts-cli"
+  },
+  "homepage": "https://github.com/apmjs/apm-ts-cli",
+  "devDependencies": {
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">= 6.0.x"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "author": "qiansc"
+}

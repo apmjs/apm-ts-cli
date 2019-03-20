@@ -13,7 +13,8 @@
     "max-line-length": [true, {"limit": 120, "ignore-pattern": "const \\S+ = `(.*?)`"}],
     "max-classes-per-file": false,
     "unified-signatures": false,
-    "no-var-requires": false
+    "no-var-requires": false,
+    "quotemark": [true, "single"],
     // "use-input-property-decorator": true,
     // "use-output-property-decorator": true,
     // "use-host-property-decorator": true
@@ -31,7 +32,6 @@
       // "no-string-literal": false,
       // "no-angle-bracket-type-assertion": false,
       // "only-arrow-functions": false,
-      // "no-namespace": false,
       // "no-internal-module": false,
       // "ban-types": false,
       // "radix": false

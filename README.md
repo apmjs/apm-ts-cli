@@ -35,47 +35,15 @@ sudo npm install apm-ts-cli
 初始化
 
 ```bash
-# 初始化当前目录
-apm-ts init
+# 初始化xxxx项目
+apm-ts init xxxx
 
-# 初始化指定目录
+# 初始化已存在目录
 apm-ts init ./xxxx
-```
-
-编译（产出位于/dist目录）
-```bash
-apm-ts build
-```
-
-本地开发
-
-```bash
-apm-ts serve
-```
-
-持续集成
-
-```bash
-# 检查
-apm-ts lint
-
-# 测试
-apm-ts test
-
-# 覆盖率
-apm-ts cover
-```
-
-发布
-
-```bash
-npm publish
-
-# 发布内网
-apm-ts publish private
-
 ```
 
 ## 配置
 
 待补充
+
+
