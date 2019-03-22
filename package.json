@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "discription": "Apmjs Typescript cli",
   "scripts": {
-    "build": "cd project && pwd"
+    "tar": "cd project && pwd && tar -zcvf ../dist/gulp.tar.gz gulp && npm run build",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -11,8 +12,12 @@
   },
   "homepage": "https://github.com/apmjs/apm-ts-cli",
   "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/node": "^11.11.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "readline2": "^1.0.1"
+  },
   "engines": {
     "node": ">= 6.0.x"
   },

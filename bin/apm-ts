@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+const pack = require('../package.json');
+// const program = require('commander');
+
+let argv = process.argv;
+
+/**
+ * program.command not used cause it may cause permission error in unix
+ */
+
+
+if (argv[2] === 'init') {
+    const init = require('../dist/init').default(argv, process.cwd());
+} else {
+    let info = [
+        '',
+        'Apm Typescript Cli',
+        'ver        ' + pack.version,
+        'git        ' + pack.homepage,
+        '',
+        '--help     helps',
+        '',
+        'init       initialize an apmjs project'
+    ];
+    console.log(info.join('\n  '));
+}
