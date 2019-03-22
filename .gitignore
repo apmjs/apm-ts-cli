@@ -21,3 +21,4 @@ coverage/
 # develop
 mydev*
 /debug/
+dist/
