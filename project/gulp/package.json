@@ -10,7 +10,7 @@
     "test": "node_modules/mocha/bin/_mocha --require ts-node/register --require source-map-support/register -t 3000 --recursive",
     "cover": "node_modules/nyc/bin/nyc.js npm run test test/**/*.ts && node_modules/nyc/bin/nyc.js report --reporter=text",
     "coveralls": "npm run cover && nyc report --reporter=text-lcov | coveralls",
-    "url": "echo visit: http://127.0.0.1:8077/demo/",
+    "url": "echo visit: http://127.0.0.1:8077/demo/?debug",
     "build": "gulp",
     "watch": "gulp watch",
     "start": "npm run url && http-server ./ -c-1 -p 8077"

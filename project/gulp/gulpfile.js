@@ -51,7 +51,7 @@ gulp.task("doc:type", function() {
         module: "commonjs",
         target: "es2015",
         out: "docs/",
-        name: "Ralltiir-Skeleton",
+        name: "{{$tittle}}",
         hideGenerator: true,
         version: false,
         theme: "minimal", // markdown | minimal | default

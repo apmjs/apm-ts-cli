@@ -23,6 +23,9 @@
   "engines": {
     "node": ">= 6.0.x"
   },
+  "files": [
+    "bin", "dist", "package*", "*.md"
+  ],
   "main": "index.js",
   "license": "MIT",
   "author": "qiansc"

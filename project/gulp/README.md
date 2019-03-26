@@ -1,27 +1,38 @@
 # {{$tittle}}
 
-This project was generated with [apm-ts-cli](https://github.com/angular/angular-cli) version {{$version}}
+This project was generated with [apm-ts-cli](https://github.com/apmjs/apm-ts-cli) version {{$version}}
+
+## Install
+
+```bash
+npm install
+npm build
+# sudo npm install ampjs -g
+cd demo && apmjs install
+```
 
 ## Development server
 
-Run `apm-ts serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `apm-ts generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm start` for a dev server. Navigate to `http://localhost:8077/?debug`.
 
 ## Build
 
-Run `apm-ts build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` or `npm run watch` to Build.
 
 ## Running unit tests
 
-Run `apm-ts test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run test` to execute the unit tests.
 
-## Running end-to-end tests
+## Coveralls
 
-Run `apm-ts e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run Coveralls` to cover the project.
+
+## Docs
+Run `npm run docs` to make docs in floder docs/.
+
+## Publish
+Run `npm version path` and then `npm publish`.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Apmts CLI use `apm-ts help` or go check out the [README](https://github.com/apmjs/apm-ts-cli/).
