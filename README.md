@@ -27,7 +27,7 @@ apm-ts-cli支持以下功能：
 ## 安装
 
 ```bash
-sudo npm install apm-ts-cli
+sudo npm install apm-ts-cli -g
 ```
 
 ## 使用

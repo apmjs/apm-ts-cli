@@ -1,5 +1,5 @@
 {
-  "name": "apm-ts",
+  "name": "apm-ts-cli",
   "version": "0.0.1",
   "discription": "Apmjs Typescript cli",
   "scripts": {
