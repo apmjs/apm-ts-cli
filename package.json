@@ -1,6 +1,6 @@
 {
   "name": "apm-ts-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "discription": "Apmjs Typescript cli",
   "scripts": {
     "build": "make tar && npm run compile",
