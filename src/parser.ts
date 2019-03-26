@@ -1,10 +1,10 @@
 import * as path from 'path';
-import * as readline from 'readline2';
+import { question } from './cmd';
 
 interface IProgram{
     action: string;
-    project?: string;
-    path?: string;
+    project: string;
+    path: string;
 }
 
 /**
@@ -13,6 +13,8 @@ interface IProgram{
 export default async function parser(argv: string[], cwd: string) {
     const program: IProgram = {
         action: argv[2],
+        project: '',
+        path: '',
     };
     // init 的辅助参数
     if (argv[3]) {
@@ -29,9 +31,13 @@ export default async function parser(argv: string[], cwd: string) {
     if (await confirmProjectName(program.project)) {
         return program;
     } else {
-
+        program.project = await enterNewProjectName();
+        if (!await confirmProjectName(program.project)) {
+            // 如果还不能确认那就结束进程
+            console.log('Exit..');
+            process.exit();
+        }
     }
-
     return program;
 }
 
@@ -39,19 +45,15 @@ export default async function parser(argv: string[], cwd: string) {
  * 确定ProjectName
  */
 async function confirmProjectName(project: string) {
-    const key = await read(`Project Name [${project}] ? (Y/N) `);
-    return (key.toUpperCase() === 'Y' || key.toUpperCase() === 'YES');
+    const key = await question(`Project Name [${project}] ? (Y/N) `);
+    return (key.toUpperCase() === 'Y' || key.toUpperCase() === 'YES' || key === '');
 }
 
-function read(info: string) {
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout,
-    });
-    return new Promise<string>((resolve) => {
-        rl.question(info, (key: string) => {
-            rl.close();
-            resolve(key);
-        });
-    });
+/**
+ * 输入新ProjectName
+ */
+async function enterNewProjectName() {
+    const key = await question(`Enter New Project Name ?`);
+    return key;
 }
+

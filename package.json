@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "discription": "Apmjs Typescript cli",
   "scripts": {
-    "tar": "cd project && pwd && tar -zcvf ../dist/gulp.tar.gz gulp && npm run build",
-    "build": "tsc -p tsconfig.json"
+    "build": "make tar && npm run compile",
+    "compile": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,9 @@
     "@types/node": "^11.11.4"
   },
   "dependencies": {
-    "readline2": "^1.0.1"
+    "readline2": "^1.0.1",
+    "replace-in-file": "^3.4.4",
+    "unzip": "^0.1.11"
   },
   "engines": {
     "node": ">= 6.0.x"
