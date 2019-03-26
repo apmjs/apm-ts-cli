@@ -29,6 +29,9 @@
     "package*",
     "*.md"
   ],
+  "bin": {
+    "apm-ts": "./bin/apm-ts"
+  },
   "main": "index.js",
   "license": "MIT",
   "author": "qiansc"
