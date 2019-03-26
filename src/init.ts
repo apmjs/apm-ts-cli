@@ -22,9 +22,12 @@ export default async function init(argv: string[], cwd: string) {
     });
 
     console.log(`Successfully Init Project!`);
+    console.log(`----------------------------------------`);
     console.log(`Please exeute following command:`);
+    console.log(`----------------------------------------`);
     console.log(`cd ${program.path}`);
     console.log(`npm install`);
     console.log(`npm run build`);
     console.log(`cd demo && apmjs install`);
+    console.log(`----------------------------------------`);
 }
