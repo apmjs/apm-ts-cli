@@ -1,6 +1,6 @@
 {
   "name": "apm-ts-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "discription": "Apmjs Typescript cli",
   "scripts": {
     "build": "make tar && npm run compile",
@@ -24,7 +24,10 @@
     "node": ">= 6.0.x"
   },
   "files": [
-    "bin", "dist", "package*", "*.md"
+    "bin",
+    "dist",
+    "package*",
+    "*.md"
   ],
   "main": "index.js",
   "license": "MIT",
