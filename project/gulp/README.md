@@ -17,7 +17,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:8077/?debug`.
 
 ## Build
 
-Run `npm run build` or `npm run watch` to Build.
+Run `npm run build` or `npm run watch` to build.
 
 ## Running unit tests
 
@@ -25,7 +25,7 @@ Run `npm run test` to execute the unit tests.
 
 ## Coveralls
 
-Run `npm run Coveralls` to cover the project.
+Run `npm run cover` to cover the project.
 
 ## Docs
 Run `npm run docs` to make docs in floder docs/.
