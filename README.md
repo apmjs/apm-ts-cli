@@ -49,6 +49,6 @@ apm-ts init ./xxxx
 
 ## 如何开始编写一个APM包？
 
-你可以阅读[浅入深出APM](https://github.com/apmjs/apm-ts-cli/wiki/%E5%87%BA%E6%B5%85%E5%85%A5%E6%B7%B1%E5%AE%9E%E8%B7%B5APM)详细了解。
+你可以阅读[出浅入深实践APM](https://github.com/apmjs/apm-ts-cli/wiki/%E5%87%BA%E6%B5%85%E5%85%A5%E6%B7%B1%E5%AE%9E%E8%B7%B5APM)详细了解。
 
 
