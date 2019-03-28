@@ -17,7 +17,7 @@ export class View {
     this.render();
   }
 
-  public render() {
+  private render() {
     if (this.dom === undefined) {
       this.container.innerHTML = `<style>${this.css}</style>${this.html}`;
       this.dom = this.container.querySelector(`.${domClass}`) || this.dom;
