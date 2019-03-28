@@ -12,7 +12,7 @@
     "coveralls": "npm run cover && nyc report --reporter=text-lcov | coveralls",
     "url": "echo visit: http://127.0.0.1:8077/demo/?debug",
     "build": "gulp",
-    "watch": "gulp watch",
+    "watch": "gulp watch & npm start",
     "start": "npm run url && http-server ./ -c-1 -p 8077"
   },
   "repository": {
@@ -58,6 +58,11 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "author": "",
+  "files": [
+    "dist",
+    "*.json",
+    "*.md"
+  ],
   "nyc": {
     "extension": [
       ".ts",

@@ -17,7 +17,11 @@ Run `npm start` for a dev server. Navigate to `http://localhost:8077/?debug`.
 
 ## Build
 
-Run `npm run build` or `npm run watch` to build.
+Run `npm run build` to build.
+
+## Watch
+
+Run `npm run watch` to start a dev server and watch to build.
 
 ## Running unit tests
 
